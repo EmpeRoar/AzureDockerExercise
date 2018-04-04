@@ -2,13 +2,15 @@ version: "3"
 
 services:
   
-
-  azuredocker:
-    build: ../src/ActioDockerExercise.Api    
+  app1x:
+    build: ../src/AzureX.Api    
     ports:
       - '5000:5000'
 
-  app2:
-    build: ../src/App2.Api    
+  app2x:
+    build: ../src/AzureDockerExercise.Api    
     ports:
-      - '5001:5001'
+      - '5001:5001'    
+      
+ 
+
